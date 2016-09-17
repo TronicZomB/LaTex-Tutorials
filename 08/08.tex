@@ -1,0 +1,33 @@
+\documentclass{article}
+
+\usepackage{booktabs}
+
+\begin{document}
+
+\begin{table}[h!]
+  \centering
+  \caption{Caption for the table.}
+  \label{tab:table1}
+  \begin{tabular}{|l|c|r|}
+	1 & 2 & 3\\
+	\hline
+	aaa & bbb & ccc
+  \end{tabular}
+\end{table}
+
+\begin{table}[h!]
+  \centering
+  \caption{Caption for the table.}
+  \label{tab:table2}
+  \begin{tabular}{ccc}
+	\toprule
+	Come & actual & content\\
+	\midrule
+	prettifies & the & content\\
+	as & well & as \\
+	using & the & booktabs package\\
+	\bottomrule
+  \end{tabular}
+\end{table}
+
+\end{document}
