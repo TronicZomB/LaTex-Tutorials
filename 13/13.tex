@@ -1,0 +1,25 @@
+\documentclass{article}
+
+\usepackage{listings}
+\usepackage{color}
+
+\lstset{ %general setup for the package
+	language=Perl,
+	basicstyle=\small\sffamily,
+	numbers=left,
+	numberstyle=\tiny,
+	frame=tb,
+	tabsize=4,
+	columns=fixed,
+	showstringspaces=false,
+	keepspaces,
+	commentstyle=\color{red},
+	keywordstyle=\color{blue}
+}
+
+\begin{document}
+   \begin{lstlisting}
+	#!/usr/bin/perl
+	print S(@ARGV);sub S{$r=(@_[0]%4==0&&@_[0]%100!=0)||@_[0]%400=0;}
+   \end{lstlisting}
+\end{document}
